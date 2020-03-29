@@ -12,6 +12,8 @@ deploy:
    provider: pages
    repo: ak340/ak340.github.io
    email: travis-ci@domain.com
+   name: Travis-CI
+   commit_message: "Tested. Committing"
    target_branch: master
    skip_cleanup: true
    github_token: $GH_TOKEN
