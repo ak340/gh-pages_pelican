@@ -6,6 +6,9 @@ script:
 - echo "test"
 deploy:
     provider: pages
-    local_dir: ../ak340.github.io/
+    skip_cleanup: true    
     target_branch: master
     github_token: $GH_TOKEN
+    keep_history: true
+    on:
+	branch:master
