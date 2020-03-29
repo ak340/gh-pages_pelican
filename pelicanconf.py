@@ -22,6 +22,7 @@ PATH = 'content'
 STATIC_PATHS = ['images']
 
 TIMEZONE = 'America/Los_Angeles'
+LOCAL = ('en_US')
 
 DEFAULT_LANG = u'en'
 OG_LOCALE = 'en_US'
