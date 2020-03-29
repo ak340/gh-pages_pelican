@@ -11,6 +11,7 @@ script:
 deploy:
    provider: pages
    repo: ak340/ak340.github.io
+   email: travis-ci@domain.com
    target_branch: master
    skip_cleanup: true
    github_token: $GH_TOKEN
