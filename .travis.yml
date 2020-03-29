@@ -3,11 +3,13 @@ install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
 script:
-- echo "test"
-after_success:
-    - git branch gh-pages
-    - git config user.name "Travis CI"
-    - git config user.email "travis@domain.com"
-    - git config --global push.default simple
-    - git remote add origin https://${GH_TOKEN}@github@.com/ak340.github.io
-    - make github
+- make html
+deploy:
+   provider: pages
+   repo:ak340/ak340.github.io
+   target_branch: master
+   skip_cleanup: true
+   github_token: $GH_TOKEN
+   local_dir: output
+   on:
+	branch: master
