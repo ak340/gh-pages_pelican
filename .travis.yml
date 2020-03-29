@@ -5,7 +5,7 @@ install:
 script:
 - make publish github
 deploy:
-	provider: pages
-	local_dir: ../ak340.github.io/
-	target-branch: master
-	github_token: $GITHUB_TOKEN
+    provider: pages
+    local_dir: ../ak340.github.io/
+    target-branch: master
+    github_token: $GITHUB_TOKEN
