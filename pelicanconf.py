@@ -37,7 +37,7 @@ LINKS_IN_NEW_TAB = False
 # Theme Settings
 SITELOGO = '/images/profile.jpg' #SITEURL + '/img/profile.png'
 FAVICON = '/images/favicon.ico'
-THEME = './Flex'
+THEME = 'Flex'
 PYGMENTS_STYLE = 'default'
 
 

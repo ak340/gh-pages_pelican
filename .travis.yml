@@ -2,8 +2,9 @@ language: python
 install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
+- pelican-themes --install 
 script:
-- make publish github
+- make html
 deploy:
     provider: pages
     local_dir: ../ak340.github.io/
