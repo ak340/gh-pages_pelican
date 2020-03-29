@@ -2,7 +2,6 @@ language: python
 install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
-- pelican-themes --install 
 script:
 - echo "test"
 deploy:
