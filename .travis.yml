@@ -4,7 +4,6 @@ install:
 - pip install -r requirements.txt
 script:
 - make html
-
 deploy:
    provider: pages
    repo:ak340/ak340.github.io

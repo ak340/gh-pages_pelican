@@ -17,6 +17,7 @@ SITEDESCRIPTION = u'cs physics audiobooks football and etc'
 #BROWSER_COLOR = '#222222'
 #PYGMENTS_STYLE = 'monokai'
 
+
 PATH = 'content'
 STATIC_PATHS = ['images']
 
