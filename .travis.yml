@@ -6,7 +6,7 @@ install:
 - git clone https://github.com/alexandrevicenzi/Flex
 - pelican-themes --install Flex/ --verbose
 script:
-- make html
+- make publish
 
 deploy:
    provider: pages
