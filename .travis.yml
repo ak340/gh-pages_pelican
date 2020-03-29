@@ -2,7 +2,7 @@ language: python
 install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
-- git clone --recursive https://github.com/getpelican/pelican-themes ~/pelican-themes
+- git clone https://github.com/getpelican/pelican-themes ~/pelican-themes
 - git clone https://github.com/alexandrevicenzi/Flex
 - pelican-themes --install Flex/ --verbose
 script:
@@ -15,5 +15,6 @@ deploy:
    skip_cleanup: true
    github_token: $GH_TOKEN
    local_dir: output
+   edge: true
    on:
        branch: master
